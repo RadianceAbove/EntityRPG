@@ -1,0 +1,77 @@
+mse version: 2.0.0
+game: Entity
+short name: Rule
+full name: Rule Text Card
+installer group: Entity/Game Files
+icon: rules-icon.png
+position hint: 02
+
+version: 2025-02-08
+depends on:
+	package: Entity.mse-game
+	version: 2025-02-08
+
+card width: 750
+card height: 1050
+card dpi: 300
+
+############## Card Fields
+
+card style:
+	
+	frame:
+		left:		0
+		top:		0
+		width:		750
+		height:		1050
+		z index:	-10
+		render style:	image
+		popup style: in place
+		choice images:
+			Misc:			rules.png
+			Misc Costless:	character_sheet.png
+			Item:			att_sheet.png
+			Spell:			character_sheet_blank.png
+			Temp Wound:		rules.png
+			Minor Wound:	rules.png
+			Major Wound:	rules.png
+			Perm Wound:		rules.png
+			Trait Blue:		rules.png
+
+	title:
+		left: 		60
+		top:		30
+		width:		630
+		height:		90
+		alignment:	middle center overflow-shrink
+		font:
+			name:		Jim Nightshade
+			size:		50
+			color:		rgb(0,0,0)
+			scale down to: 	25
+
+	text:
+		left: 		40
+		top:		150
+		width:		670
+		height:		875
+		alignment:	left top
+		font:
+			name:		EB Garamond
+			size:		30
+			color:		rgb(0,0,0)
+			scale down to: 	15
+
+	number:
+		left: 		680
+		top:		1032
+		width:		90
+		height:		35
+		angle: 60
+		alignment: center middle
+		font:
+			name:		EB Garamond
+			size:		18
+			color:		rgb(255,255,255)
+			scale down to: 	15
+	

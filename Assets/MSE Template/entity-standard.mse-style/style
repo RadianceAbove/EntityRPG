@@ -1,0 +1,113 @@
+mse version: 2.0.0
+game: Entity
+short name: Standard
+full name: Standard Card
+installer group: Entity/Game Files
+icon: standard-icon.png
+position hint: 01
+
+version: 2025-02-08
+depends on:
+	package: Entity.mse-game
+	version: 2025-02-08
+
+card width: 750
+card height: 1050
+card dpi: 300
+
+############## Card Fields
+
+card style:
+	
+	frame:
+		left:		0
+		top:		0
+		width:		750
+		height:		1050
+		z index:	-10
+		render style:	image
+		popup style: in place
+		choice images:
+			Misc:			misc.png
+			Misc Costless:	misc-no-cost.png
+			Item:			item.png
+			Spell:			spell.png
+			Temp Wound:		wound_temp.png
+			Minor Wound:	wound_minor.png
+			Major Wound:	wound_major.png
+			Perm Wound:		wound_perm.png
+			Trait Blue:		trait_blue.png
+
+	title:
+		left: 		60
+		top:		30
+		width:		630
+		height:		90
+		alignment:	middle center overflow-shrink
+		font:
+			name:		Jim Nightshade
+			size:		50
+			color:		rgb(0,0,0)
+			scale down to: 	25
+
+	text:
+		left: 		40
+		top:		158
+		width:		670
+		height:		785
+		alignment:	left top
+		font:
+			name:		EB Garamond
+			size:		30
+			color:		rgb(0,0,0)
+			scale down to: 	15
+
+	type:
+		left: 		45
+		top:		952
+		width:		300
+		height:		60
+		alignment:	middle left overflow-shrink
+		font:
+			name:		EB Garamond
+			size:		40
+			color:		rgb(0,0,0)
+			scale down to: 	25
+
+	att1:
+		left: 444
+		top: 975
+		width: 60
+		height: 40
+		alignment:	middle center
+		font:
+			name:		EB Garamond
+			size:		30
+			color:		rgb(0,0,0)
+			scale down to: 	25
+
+	att2:
+		left: 605
+		top: 946
+		width: 60
+		height: 40
+		alignment:	middle center
+		font:
+			name:		EB Garamond
+			size:		30
+			color:		rgb(0,0,0)
+			scale down to: 	25
+
+	number:
+		left: 		680
+		top:		1032
+		width:		90
+		height:		35
+		angle: 60
+		alignment: center middle
+		font:
+			name:		EB Garamond
+			size:		18
+			color:		rgb(255,255,255)
+			scale down to: 	15
+	

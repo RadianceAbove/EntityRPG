@@ -1,0 +1,113 @@
+﻿mse version: 		2.0.0
+short name: 		Entity
+full name: 		Entity
+installer group: Entity/Game Files
+icon: 			icon.png
+position hint: 		01
+
+version: 		2025-02-08
+
+
+############ Set Fields
+
+set field:
+	type:			text
+	name:			title
+	description: 	This information will not appear on the card.
+set field:
+	type: 		text
+	name: 		description
+	multi line: 	true
+	description: 	This information will not appear on the card.
+set field:
+	type: 		text
+	name: 		designer
+	description: 	Designer(s) of the set.
+set field:
+	type: 		text
+	name: 		date
+	description: 	Date
+
+
+############################# Card Fields
+
+card field:
+	type: 			text
+	name: 			title
+	show statistics: 	false
+	card list visible: 	true
+	card list name: 	Name
+	card list column: 	1
+	card list width: 	150
+	description: 		The name of the card
+
+card field:
+	type:			choice
+	name:			frame
+	choice:			Misc
+	choice:			Misc Costless
+	choice:			Item
+	choice:			Spell
+	choice:			Temp Wound
+	choice:			Minor Wound
+	choice:			Major Wound
+	choice:			Perm Wound
+	choice:			Trait Blue
+	card list visible: 	false
+	description: 		The frame of the card
+
+card field:
+	type: 			text
+	name: 			type
+	card list visible: 	true
+	card list name: 	Type
+	card list column: 	3
+	card list width: 	150
+	description: 		The type of this card
+
+card field:
+	type: 			text
+	name: 			text
+	multi line: 		true
+	show statistics: 	false
+
+card field:
+	type: 			image
+	name: 			image
+	show statistics: 	false
+
+card field:
+	type: 			text
+	name: 			att1
+	card list visible: 	true
+	card list name: 	Att1
+	card list column: 	5
+	card list width: 	50
+
+card field:
+	type: 			text
+	name: 			att2
+	card list visible: 	true
+	card list name: 	Att2
+	card list column: 	6
+	card list width: 	50
+	
+card field:
+	type: 			text
+	name: 			number
+	card list visible: 	true
+	card list name: 	#
+	card list column: 	7
+	card list width: 	50
+
+auto replace:
+	match: --
+	replace: —
+auto replace:
+	# note the spaces
+	match:
+		 - 
+	replace:
+		 — 
+############################# Keywords
+has keywords: false

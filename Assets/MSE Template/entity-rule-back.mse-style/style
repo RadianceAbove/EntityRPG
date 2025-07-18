@@ -1,0 +1,71 @@
+mse version: 2.0.0
+game: Entity
+short name: Rule Back
+full name: Rule Text Back Card
+installer group: Entity/Game Files
+icon: rulesback-icon.png
+position hint: 03
+
+version: 2025-02-08
+depends on:
+	package: Entity.mse-game
+	version: 2025-02-08
+
+card width: 750
+card height: 1050
+card dpi: 300
+
+############## Card Fields
+
+card style:
+	
+	frame:
+		left:		0
+		top:		0
+		width:		750
+		height:		1050
+		z index:	-10
+		render style:	image
+		popup style: in place
+		choice images:
+			Misc:			rulesback.png
+			Misc Costless:	rules.png
+			Item:			rulesback.png
+			Spell:			rulesback.png
+			Temp Wound:		rulesback.png
+			Minor Wound:	rulesback.png
+			Major Wound:	rulesback.png
+			Perm Wound:		rulesback.png
+			Trait Blue:		rulesback.png
+
+	text:
+		left: 		40
+		top:		30
+		width:		670
+		height:		995
+		alignment:	left top
+		font:
+			name:		EB Garamond
+			size:		30
+			color:		rgb(0,0,0)
+			scale down to: 	15
+
+	image:
+		left: 		0
+		top:		105
+		width:		750
+		height:		0
+		z index:	-5
+
+	number:
+		left: 		680
+		top:		1032
+		width:		90
+		height:		35
+		angle: 60
+		alignment: center middle
+		font:
+			name:		EB Garamond
+			size:		18
+			color:		rgb(255,255,255)
+			scale down to: 	15
